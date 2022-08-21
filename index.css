@@ -36,5 +36,9 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #333;
+    color: rgb(209, 103, 219);
+}
+
+.content ul{
+    margin-left: 40px;
 }
