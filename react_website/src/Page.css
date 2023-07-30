@@ -1,0 +1,34 @@
+.page {
+    color: rgb(42, 42, 42);
+    padding-left: 18px;
+    padding-right: 18px;
+}
+
+.lesson {
+    border: 2px solid rgba(180, 180, 180, 0.25);
+    border-radius: 20px;
+    margin: 18px;
+    padding: 36px;
+}
+
+h3 {
+    display: block;
+}
+
+article a {
+    text-decoration: none;
+    color: green;
+}
+
+.gist {
+    width: 90%;
+    margin: auto;
+}
+
+.gistTitle {
+    visibility: hidden;
+}
+
+.gistWrapper {
+    margin: auto;
+}

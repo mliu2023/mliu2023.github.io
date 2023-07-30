@@ -1,0 +1,31 @@
+.about {
+    margin: 36px;
+    color: rgb(42, 42, 42);
+}
+
+section {
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 36px;
+}
+
+#section1 {
+    width: 40%;
+    border-color: rgba(0, 255, 221, 0.25)
+}
+
+#section2 {
+    width: 40%;
+    position: relative;
+    left: 60%;
+    border-color: rgba(9, 255, 0, 0.25);
+}
+
+#section3 {
+    width: 40%;
+    border-color: rgba(170, 0, 255, 0.25);
+}
+#section3 ul{
+    list-style-type: "- ";
+}
+

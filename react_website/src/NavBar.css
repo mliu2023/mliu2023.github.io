@@ -1,0 +1,55 @@
+/* NavBar */
+nav {
+    margin: 18px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    position: sticky;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+}
+
+nav li {
+    float: left;
+}
+
+nav ul li .link {
+    display: block;
+    color: rgb(26, 104, 194);
+    font-size: 18px;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+}
+
+nav li .link:hover {
+    background-color: rgb(235, 235, 235);
+}
+
+nav li .active {
+    position: relative;
+    left: 0;
+    bottom: 4px;
+    height: 4px;
+    background-color: rgb(50, 156, 255);
+    animation-name: expand;
+    animation-duration: .75s;
+    animation-timing-function: cubic-bezier(0, .67, .2, .83);
+}
+
+/* The animation code */
+@keyframes expand {
+    from {
+        width: 0%;
+        left: 50%;
+    }
+
+    to {
+        width: 100%;
+        left: 0%;
+    }
+}
