@@ -5,14 +5,13 @@
 .header img {
     display: inline;
     position: relative;
-    width: 40px;
+    width: 60px;
     height: 40px;
     margin-right: 20px;
     top: 8px;
 }
 .header h1 {
     display: inline;
-    color: rgba(42, 42, 42, 0.85);
     font-weight: bold;
 }
 .header hr {

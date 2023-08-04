@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import icon from './images/neural.png';
+import icon from './images/dl_icon.png';
 import './Header.css';
 
 function Header() {

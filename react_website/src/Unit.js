@@ -9,13 +9,12 @@ function Unit({ unit, subUnitList }){
     const overview = [
     (
         <article>
-            Due to the exponential growth of digital information
-            in the past few years, developing algorithms to find
-            patterns in data has become essential for informed decision-making.
-            Machine learning algorithms learn from the training data and adjust based on
-            feedback. The simplest type of learning is supervised learning,
-            which is when a model trains on a labeled dataset to predict outputs
-            given a set of inputs.
+            Due to the exponential growth of digital information in the past few 
+            years, developing algorithms to find patterns in data has become 
+            essential for informed decision-making. Machine learning algorithms 
+            learn from the training data and adjust based on feedback. The simplest 
+            type of learning is supervised learning, which is when a model trains 
+            on a labeled dataset to predict outputs given a set of inputs.
         </article>
     ),
     (
@@ -23,7 +22,7 @@ function Unit({ unit, subUnitList }){
             Unit 1 covered supervised learning, which requires labeled datasets. 
             While using labeled datasets is the most reliable way to train a model, 
             the most significant limitation on using labeled datasets is that they 
-            are expensive to hand-label. As a result, there is much more unlabeled 
+            are expensive to hand-label. As a result, there are much more unlabeled 
             data than labeled data. This section covers learning methods that can be 
             used with limited or no labeled data.
         </article>

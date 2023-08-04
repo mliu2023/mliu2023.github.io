@@ -1,7 +1,7 @@
 .pageNav ul {
     list-style-type: none;
     overflow: hidden;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
 }
 
 .pageNav ul {
@@ -11,9 +11,8 @@
 }
 
 .pageNav button {
-    color: rgb(150, 150, 150);
     height: 40px;
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     border: 2px solid rgb(150, 150, 150);
 }
 
@@ -41,7 +40,6 @@
 .title {
     height: 100%;
     width: 40vw;
-    color: grey;
     border-top: 2px solid rgb(150, 150, 150);
     border-bottom: 2px solid rgb(150, 150, 150);
     text-align: center;

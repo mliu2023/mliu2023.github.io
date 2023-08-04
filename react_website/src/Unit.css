@@ -5,7 +5,6 @@
 .unit h2 {
     padding: 18px;
     padding-top: 0;
-    color: rgba(42, 42, 42, 0.85);
     font-weight: bold;
 }
 
@@ -16,12 +15,9 @@
 
 .unit ul .subunit {
     text-decoration: none;
-    color: rgba(42, 42, 42, 0.85);
-    color: rgb(26, 104, 194);
     font-size: 18px;
     display: inline-block;
     position: relative;
-    color: rgb(26, 104, 194);
 }
 
 .unit ul .subunit:after {
@@ -32,7 +28,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: rgb(26, 104, 194);
+    background-color: rgb(75, 156, 255);
     transform-origin: bottom right;
     transition: transform 0.5s ease-out;
 }
@@ -43,11 +39,12 @@
 }
 
 .unit p article {
-    padding: 18px;
+    padding: 24px;
     width: 50%;
-    border-left: 2px solid;
-    border-right: 2px solid;
+    border: 2px solid;
+    border-radius: 20px;
     margin: auto;
+    line-height: 22px;
 }
 
 .unit1Img {

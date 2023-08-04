@@ -153,6 +153,15 @@ export const pages = [
             <article>
                 Neural Radiance Fields (NeRFs) are a type of neural network that can synthesize views of complex 3D scenes. <a href='https://www.youtube.com/watch?v=CRlN-cYFxTk&ab_channel=YannicKilcher'>NeRFs Explained</a>.
             </article>
+        ),
+        (
+            <article>
+                Adversarial attacks are used to trick a model into producing an incorrect/nonsensical output. <a href='https://www.tensorflow.org/tutorials/generative/adversarial_fgsm'>Tensorflow example</a>. <br/>
+                This is particularly useful when we want to prevent large AI models from manipulating our images to create deepfakes. <br/>
+                A new tool called <a href='https://www.technologyreview.com/2023/07/26/1076764/this-new-tool-could-protect-your-pictures-from-ai-manipulation/'>PhotoGuard</a> was developed to protect your images. 
+                Click <a href='https://github.com/MadryLab/photoguard'>here</a> for the source code.
+
+            </article>
         )
     ]
 ];

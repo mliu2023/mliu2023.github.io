@@ -1,3 +1,18 @@
 .home {
     margin: 36px;
 }
+
+.home .tagline {
+    position: relative;
+    left: 25vw;
+    top: 10vh;
+}
+
+.home .tagline h1 {
+    font-size: 80px;
+}
+
+.home .tagline h5 {
+    font-size: 16px;
+    padding-left: 4px;
+}

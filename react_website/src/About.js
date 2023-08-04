@@ -12,7 +12,10 @@ function About() {
     </section>
     <br />
     <section id="section2">
-      Interests: Contest math, AI, golf, video/board games, running
+      This resource is neither the most efficient nor the most 
+      rigorous way to cover deep learning. Instead, it gives 
+      non-CS majors a chance to keep up with the latest 
+      developments in AI without having to take a class.
     </section>
     <br />
     <section id="section3">
@@ -21,7 +24,6 @@ function About() {
       <ul>
         <li>Email: maximusliu2004@gmail.com</li>
         <li>Discord: skittlesmurf</li>
-        <li>Instagram: max.j.liu (I don't really use this)</li>
       </ul>
     </section>
   </div>);

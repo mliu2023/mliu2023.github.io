@@ -4,6 +4,7 @@ import Header from './Header';
 import NavBar from './NavBar';
 import Home from './Home';
 import About from './About';
+import Resources from './Resources';
 import Unit from './Unit';
 import Page from './Page';
 import CustomLink from './CustomLink'
@@ -38,7 +39,7 @@ function App() {
     );
 
   return (
-    <div>
+    <div className="app">
       <HashRouter>
         <Header />
         <NavBar />
@@ -46,6 +47,7 @@ function App() {
           <Route path="/" element={<Navigate to="/home" />} />
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
+          <Route path="/resources" element={<Resources />} />
           {subUnitList}
         </Routes>
         {subUnitRoutes}
