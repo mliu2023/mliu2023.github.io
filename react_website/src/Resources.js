@@ -32,6 +32,9 @@ function Resources() {
                     <a href='https://pytorch-geometric.readthedocs.io/en/latest/'>PyTorch Geometric</a> - library for graph neural networks
                 </li>
                 <li>
+                    <a href='https://deepchem.io/'>DeepChem</a> - Python library for deep learning on molecular datasets
+                </li>
+                <li>
                     <a href='https://moody-challenge.physionet.org/'>PhysioNet Challenges</a> - data science challenges related to ECGs and other physiological signals
                 </li>
                 <li>

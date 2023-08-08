@@ -32,8 +32,8 @@ nav li .link:hover {
 nav li .active {
     position: relative;
     left: 0;
-    bottom: 4px;
-    height: 4px;
+    bottom: 2px;
+    height: 2px;
     background-color: rgb(50, 156, 255);
     animation-name: expand;
     animation-duration: .75s;

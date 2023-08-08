@@ -38,13 +38,9 @@
     transform-origin: bottom left;
 }
 
-.unit p article {
-    padding: 24px;
+.unit .card {
     width: 50%;
-    border: 2px solid;
-    border-radius: 20px;
     margin: auto;
-    line-height: 22px;
 }
 
 .unit1Img {

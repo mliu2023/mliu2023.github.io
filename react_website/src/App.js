@@ -8,35 +8,27 @@ import Resources from './Resources';
 import Unit from './Unit';
 import Page from './Page';
 import CustomLink from './CustomLink'
-import './App.css';
 import { topics } from './Topics';
+import './App.css';
 
 function App() {
-  const subUnitList = topics.map(
-    (list, unitIndex) => (
-      <Route path = {`/unit${unitIndex+1}`} element={
-        <Unit unit={unitIndex+1} subUnitList={
-          list.map(
-            (title, subUnitIndex) => (
-              <li><CustomLink to={`/unit${unitIndex+1}/${subUnitIndex+1}`} className='subunit'>{title}</CustomLink></li>
-            )
-          )
-        }/>
-      }>
-      </Route>)
-    );
+  const subUnitList = 
+  topics.map((list, unitIndex) => (
+    <Route path = {`/unit${unitIndex+1}`} 
+      element={<Unit unit={unitIndex+1} 
+        subUnitList={
+          list.map((title, subUnitIndex) => (
+            <li><CustomLink to={`/unit${unitIndex+1}/${subUnitIndex+1}`} className='subunit'>{title}</CustomLink></li>))}/>}>
+    </Route>));
 
-  const subUnitRoutes = topics.map(
-    (list, unitIndex) => (
-      <Routes>{list.map(
-        (title, subUnitIndex) => (
-          <Route path={`/unit${unitIndex + 1}/${subUnitIndex + 1}`} element={
-            <Page unit={unitIndex + 1} index={subUnitIndex + 1} title={title}/>}>
-          </Route>
-        )
-      )}
-      </Routes>)
-    );
+  const subUnitRoutes = 
+  topics.map((list, unitIndex) => (
+    <Routes>
+      {list.map((title, subUnitIndex) => (
+        <Route path={`/unit${unitIndex + 1}/${subUnitIndex + 1}`} 
+          element={<Page unit={unitIndex + 1} index={subUnitIndex + 1} title={title}/>}>
+        </Route>))}
+    </Routes>));
 
   return (
     <div className="app">

@@ -2,13 +2,6 @@
     margin: 36px;
 }
 
-section {
-    border: 2px solid;
-    border-radius: 20px;
-    padding: 24px;
-    line-height: 22px;
-}
-
 #section1 {
     width: 40%;
     border-color: rgb(59, 255, 229)
@@ -25,5 +18,5 @@ section {
 }
 #section3 ul{
     list-style-type: "- ";
+    padding-left: 15px;
 }
-
