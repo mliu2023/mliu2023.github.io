@@ -14,6 +14,10 @@
 }
 
 /* index */
+html {
+  height: 100%;
+}
+
 body {
   margin: 18px;
   background-color: rgb(39, 39, 39);
