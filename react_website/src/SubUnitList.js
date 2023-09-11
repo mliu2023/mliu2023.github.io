@@ -1,7 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { topics } from './Topics';
-import CustomLink from './CustomLink'
+import { topics } from './content/Topics';
+import CustomLink from './CustomLink';
+import Unit from './Unit';
 
 export const subUnitList =
     topics.map((list, unitIndex) => (

@@ -1,21 +1,14 @@
 .about {
+    position: relative;
     margin: 36px;
 }
 
-#section1 {
+.about .card {
+    align-items: center;
     width: 40%;
-    border-color: rgb(59, 255, 229)
+    margin: 36px 0;
 }
 
-#section2 {
-    width: 40%;
-    border-color: rgb(97, 255, 92);
-}
-
-#section3 {
-    width: 40%;
-    border-color: rgb(193, 70, 255);
-}
 #section3 ul{
     list-style-type: "- ";
     padding-left: 15px;

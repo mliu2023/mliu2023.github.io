@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
-import './Home.css'
+import About from './About';
+import './Home.css';
 
 function Home() {
   const idRef = useRef();
@@ -11,8 +12,8 @@ function Home() {
       'money.',
       'you have leftover GPUs from mining Bitcoin.',
       'drug discovery.',
-      'torch > scikit-learn.',
-      'LLMs can write my paper.'];
+      'LLMs can write my papers.',
+      'hardware is boring.'];
     let timer = setTimeout(() => typeWriter(text), 1000);
     return () => {
       clearTimeout(timer);
@@ -22,7 +23,7 @@ function Home() {
 
   var stringIndex = 0;
   var charIndex = 0;
-  let speed = 50;
+  let timePerString = 1250;
   let pause = 1000;
 
   function typeWriter(text) {
@@ -30,7 +31,7 @@ function Home() {
       if (charIndex < text[stringIndex].length) {
         document.getElementById("typedtext").innerHTML += text[stringIndex].charAt(charIndex);
         charIndex++;
-        const id = setTimeout(() => { typeWriter(text) }, speed);
+        const id = setTimeout(() => { typeWriter(text) }, timePerString / text[stringIndex].length);
         idRef.current = id;
       }
       else {
@@ -44,7 +45,7 @@ function Home() {
       if (charIndex > 0) {
         document.getElementById("typedtext").innerHTML = document.getElementById("typedtext").innerHTML.slice(0, -1);
         charIndex--;
-        const id = setTimeout(() => { typeDeleter(text) }, speed);
+        const id = setTimeout(() => { typeDeleter(text) }, timePerString / text[stringIndex].length);
         idRef.current = id;
       }
       else {

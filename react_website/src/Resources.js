@@ -7,7 +7,7 @@ function Resources() {
             <ul>
                 <h2>General resources:</h2>
                 <li>
-                    <a href='https://huggingface.co/models'>HuggingFace</a> - online platform where researchers and AI enthusiasts upload models that can compete with big tech companies
+                    <a href='https://huggingface.co/models'>HuggingFace</a> - online platform where researchers and AI enthusiasts upload models
                 </li>
                 <li>
                     <a href='https://www.kaggle.com/'>Kaggle</a> - online community platform of data scientists that hosts challenges and provides a free Jupyter notebook environment
@@ -24,6 +24,12 @@ function Resources() {
                 <li>
                     <a href='https://research.google/resources/datasets/'>https://research.google/resources/datasets/</a> - google’s released datasets
                 </li>
+                <li>
+                    <a href='https://course.fast.ai/'>https://course.fast.ai/</a> - Fast AI's comprehensive deep learning course
+                </li>
+                <li>
+                    <a href='https://learn.deeplearning.ai/'>DeepLearning.ai</a> - a set of non-technical short courses for developing AI tools
+                </li>
             </ul>
             <br/>
                 <h2>Specific resources:</h2>
@@ -38,13 +44,13 @@ function Resources() {
                     <a href='https://moody-challenge.physionet.org/'>PhysioNet Challenges</a> - data science challenges related to ECGs and other physiological signals
                 </li>
                 <li>
-                    <a href='https://pharmapsychotic.com/tools.html'>https://pharmapsychotic.com/tools.html</a> - list of AI art tools
-                </li>
-                <li>
                     <a href='https://gymnasium.farama.org/'>Gymnasium</a> - Python library for creating reinforcement learning environments
                 </li>
                 <li>
                     <a href='https://developers.google.com/earth-engine/datasets'>https://developers.google.com/earth-engine/datasets</a> - google earth engine
+                </li>
+                <li>
+                    <a href='https://www.langchain.com/'>LangChain</a> - a framework for developing applications powered by LLMs
                 </li>
             </ul>
             <br/>
@@ -56,6 +62,7 @@ function Resources() {
                 <li><a href='https://www.youtube.com/@TwoMinutePapers'>TwoMinutePapers</a></li>
                 <li><a href='https://www.youtube.com/@YannicKilcher'>Yannic Kilcher</a></li>
                 <li><a href='https://www.youtube.com/@outlier4052'>Outlier</a></li>
+                <li><a href='https://www.youtube.com/@bycloudAI'>Bycloud</a></li>
             </ul>
         </div>
     );
