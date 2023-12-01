@@ -19,6 +19,9 @@ function Resources() {
                     <a href='https://paperswithcode.com/'>Papers With Code</a> - aggregates state-of-the-art results from research papers along with code
                 </li>
                 <li>
+                    <a href='https://papers.labml.ai/papers/weekly'>LabML</a> - trending research papers
+                </li>
+                <li>
                     <a href='https://datasetsearch.research.google.com/'>https://datasetsearch.research.google.com/</a> - dataset search
                 </li>
                 <li>

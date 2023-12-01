@@ -12,12 +12,14 @@ function About() {
           Please feel free to email/dm me with any suggestions!
       </p>
     </section>
-    <section id="section2" className="card">
+    {/*<section id="section2" className="card">
       This resource is neither the most efficient nor the most 
       rigorous way to cover deep learning. Instead, it gives 
       non-CS majors a chance to keep up with the latest 
       developments in AI without having to take a class.
     </section>
+  */}
+    {/*
     <section id="section3" className="card">
       Contact information:
       <br />
@@ -26,6 +28,7 @@ function About() {
         <li>Discord: skittlesmurf</li>
       </ul>
     </section>
+  */}
   </div>);
 }
 export default About;
