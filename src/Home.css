@@ -1,0 +1,33 @@
+.home {
+    margin: 36px;
+}
+
+.home .tagline {
+    position: relative;
+    left: 20vw;
+    top: 10vh;
+    padding-bottom: 36px;
+}
+
+.home .tagline h1 {
+    font-size: 96px;
+}
+
+@keyframes blinkTextCursor {
+    from {
+        border-right-color: rgba(220, 220, 220);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.home .tagline h5 {
+    display: inline-block;
+    font-size: 24px;
+    padding-left: 4px;
+    padding-right: 2px;
+    border-right: 2px solid rgba(220, 220, 220);
+    animation: blinkTextCursor 750ms steps(20) infinite normal;
+}
