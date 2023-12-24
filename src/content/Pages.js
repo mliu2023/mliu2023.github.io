@@ -162,7 +162,7 @@ export const pages = [
         (
             <article>
                 MIT researchers discover <a href='https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220'>a new antibiotic compound</a>. <br/>
-                A recorded talk at a drug discovery conference: <a href='https://www.youtube.com/watch?v=jrVXJykB8qc&ab_channel=ValenceLabs'>Can graph neural networks understand chemistry?</a>
+                <a href='https://www.nature.com/articles/s41467-022-29939-5'>Equivariant graph neural networks</a> are used to learn the structure of molecules.
             </article>
         ),
         (
