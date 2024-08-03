@@ -1,8 +1,8 @@
 export const unitNames = 
 [
     'Introduction to Supervised Learning and Neural Networks',
-    'Unsupervised and Other Types of Learning',
-    'Deep Learning Architectures',
+    'Unsupervised Learning and Reinforcement Learning',
+    'Deep Learning Architectures and Methods',
     'Applications'
 ]
 export const overview = [
@@ -18,9 +18,9 @@ export const overview = [
         <div className="card">
             Unit 1 covered supervised learning, which requires labeled datasets.
             However, a significant limitation on using labeled datasets is that 
-            labeling is expensive. As a result, there is much more unlabeled
-            data than labeled data. This section covers learning methods that can be
-            used with limited or no labeled data.
+            labeling is expensive and not always feasible. As a result, there is 
+            much more unlabeled data than labeled data. This section covers learning 
+            methods that can be used with limited or no labeled data.
         </div>
     ),
     (

@@ -71,10 +71,20 @@ export const pages = [
         ),
         (
             <article>
-                Read the following: <a href='https://cs231n.github.io/transfer-learning/'>Transfer learning - CS231n</a>.
-                <div class="gistContainer">
-                    <ReactEmbedGist className="gist" wrapperClass="gistWrapper" titleClass="gistTitle" gist="mliu2023/9467f4bd11ce6a9016aefb3438f2d4b8"/>
-                </div>
+                Sparse autoencoders are used to interpret neuron activations in MLP layers of transformer blocks, usually in LLMs or Vision Transformers. <br/> <br/>
+                Consider the following situation: in a deep neural network, the model has to represent features using a fixed number of neurons.
+                The number of possible features is huge: it is safe to say there are millions or billions of features, regardless of what you consider to be a feature.
+                However, the number of neurons in an MLP layer is much smaller: say 1,000 to 10,000. <br/> <br/>
+                
+                If each activation represents one feature, then the model will not be able to represent all kinds of ideas.
+                As a result, it has been hypothesized that neural networks represent features using combinations of activations, which makes it hard to interpret what any given activation means. <br/> <br/>
+                
+                While autoencoders learn to compress inputs into a small latent space, sparse autoencoders learn to project the inputs into
+                a much larger feature space. The model is trained with an L1 penalty on the intermediate
+                activations (in addition to the L2 reconstruction loss), which encourages the activations in the feature space to be sparse. In an ideal world, each input would correspond to only a few activations in
+                the feature space, which are likely to be more human-interpretable. <br/> <br/>
+                <a href='https://transformer-circuits.pub/2023/monosemantic-features/index.html'>Anthropic's research on a one-layer transformer (October 2023)</a> <br/>
+                <a href='https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html'>Anthropic's research on Claude 3 Sonnet (May 2024)</a>
             </article>
         ),
         (
@@ -86,7 +96,54 @@ export const pages = [
         ),
         (
             <article>
-                Read the following article: <a href='https://towardsdatascience.com/multi-task-learning-in-machine-learning-20a37c796c9c'>Multi-task learning</a>.
+                The distinction between on-policy vs. off-policy is one way to categorize reinforcement learning methods. This classification tends to be confusing, 
+                so I will give a high-level explanation at the risk of oversimplification. <br/> <br/>
+
+                On-policy learning is like learning from what you are currently doing. 
+                The agent uses a policy to guide its actions, and that policy is updated based on the outcomes of its actions.
+                This means that on-policy algorithms learn in real-time. <br/> <br/>
+
+                Off-policy is like learning from someone else's experience. 
+                The agent learns an optimal policy by taking actions (not necessarily according to its learned policy) 
+                and learning the best actions in each state.
+                Off-policy algorithms do not learn in real-time; instead, they store experiences in a replay buffer
+                and iteratively train using those experiences. <br/> <br/>
+
+                <a href='https://www.geeksforgeeks.org/on-policy-vs-off-policy-methods-reinforcement-learning/'>Geeksforgeeks article</a> <br/>
+                <a href='https://stats.stackexchange.com/questions/184657/what-is-the-difference-between-off-policy-and-on-policy-learning'>Stack Exchange discussion</a>
+            </article>
+        ),
+        (
+            <article>
+                Q-Learning is an off-policy algorithm to learn the value of taking a given action in a given state (this value is called the Q-value). 
+                This allows the model to learn the optimal policy––taking the best action in its current state. <br/>
+                <a href='https://huggingface.co/learn/deep-rl-course/en/unit2/q-learning'>HuggingFace Q-Learning</a> <br/>
+                <a href='https://huggingface.co/learn/deep-rl-course/en/unit3/introduction'>HuggingFace Deep Q-Learning Unit</a>
+            </article>
+        ),
+        (
+            <article>
+                PPO is an on-policy algorithm to learn which action it should take in a given state. It is a policy gradient method, 
+                which means that it learns parameters by maximizing expected value of the reward using gradient ascent.<br/>
+                <a href='https://openai.com/index/openai-baselines-ppo/'>OpenAI article</a> <br/>
+                <a href='https://www.youtube.com/watch?v=5P7I-xPq8u8&ab_channel=ArxivInsights'>ArXiv Insights video</a>
+            </article>
+        ),
+        (
+            <article>
+                GFlowNets are a type of network that sample trajectories by iteratively choosing actions from a given starting state.
+                Each trajectory is given a reward based on its terminal state, similar to reinforcement learning setups. <br/> <br/>
+
+                However, GFlowNets are trained to sample trajectories proportional to their reward, which is different from RL algorithms
+                that are trained to sample trajectories to maximize the reward. GFlowNets lead to more sample diversity, which
+                helps the model find more modes (areas of high reward) quickly. <br/> <br/>
+
+                GFlowNets require that the states (nodes) and the actions (directed edges) form a directed acyclic graph.
+                This means that they are applicable to tasks such as molecule generation, where each state is a molecule and
+                each action is the addition of a new atom, connected to the existing molecule by a bond.
+                <div class="gistContainer">
+                    <ReactEmbedGist className="gist" wrapperClass="gistWrapper" titleClass="gistTitle" gist="mliu2023/d9118d4b42abbaabc4f88ed43edc6da1" />
+                </div>
             </article>
         )
     ],
@@ -126,29 +183,30 @@ export const pages = [
         ),
         (
             <article>
-                Watch the following MIT lecture: <a href='https://youtu.be/3G5hWM6jqPk?t=2335'>Deep Generative Modeling</a>.
-            </article>
-        ),
-        (
-            <article>
-                Watch the following videos: <a href='https://www.youtube.com/watch?v=HoKDTa5jHvg&ab_channel=Outlier'>Diffusion explained</a>, <a href='https://youtu.be/FHeCmnNe0P8?t=2578'>MIT Diffusion Lecture</a>. <br/>
-                If you wanted to see diffusion implemented from scratch, watch <a href='https://www.youtube.com/watch?v=a4Yfz2FxXiY&ab_channel=DeepFindr'>this video</a>.
-            </article>
-        ),
-        (
-            <article>
-                Read the following document for a high-level overview of graph neural networks: <a href='https://distill.pub/2021/gnn-intro/'>Distill article</a>. <br/>
+                Read the following document for a high-level overview of graph neural networks: <a href='https://distill.pub/2021/gnn-intro/'>Distill article</a>. <br />
                 Then, watch the following video: <a href='https://www.youtube.com/watch?v=GXhBEj1ZtE8&t=14s&ab_channel=AlexFoo'>Graph Neural Networks</a>.
                 Notice the similarity between graph neural networks and convolutional neural networks.
             </article>
         ),
         (
             <article>
-                Watch the following MIT lecture: <a href='https://www.youtube.com/watch?v=p1NpGC8K-vs&ab_channel=AlexanderAmini'>The Modern Era of Statistics</a>. <br/>
-                In what ways were some of the accepted assumptions from classical statistics inaccurate?
-                What improvements have allowed models to use more parameters effectively?
+                Watch the following videos: <a href='https://www.youtube.com/watch?v=HoKDTa5jHvg&ab_channel=Outlier'>Diffusion explained</a>, <a href='https://youtu.be/FHeCmnNe0P8?t=2578'>MIT Diffusion Lecture</a>. <br />
+                If you wanted to see diffusion implemented from scratch, watch <a href='https://www.youtube.com/watch?v=a4Yfz2FxXiY&ab_channel=DeepFindr'>this video</a>.
             </article>
-        )
+        ),
+        (
+            <article>
+                Watch the following MIT lecture: <a href='https://youtu.be/3G5hWM6jqPk?t=2335'>Deep Generative Modeling</a>.
+            </article>
+        ),
+        (
+            <article>
+                Read the following: <a href='https://cs231n.github.io/transfer-learning/'>Transfer learning - CS231n</a>.
+                <div class="gistContainer">
+                    <ReactEmbedGist className="gist" wrapperClass="gistWrapper" titleClass="gistTitle" gist="mliu2023/9467f4bd11ce6a9016aefb3438f2d4b8" />
+                </div>
+            </article>
+        ),
     ],
     [
         (
@@ -179,7 +237,7 @@ export const pages = [
                 Adversarial attacks are used to trick a model into producing an 
                 incorrect/nonsensical output. <a href='https://www.tensorflow.org/tutorials/generative/adversarial_fgsm'>Tensorflow example</a>. <br/>
                 This is particularly useful when we want to prevent large AI models from manipulating our images to create deepfakes. <br/>
-                A new tool called <a href='https://www.technologyreview.com/2023/07/26/1076764/this-new-tool-could-protect-your-pictures-from-ai-manipulation/'>PhotoGuard</a> was developed to protect your images. 
+                A tool called <a href='https://www.technologyreview.com/2023/07/26/1076764/this-new-tool-could-protect-your-pictures-from-ai-manipulation/'>PhotoGuard</a> was developed to protect your images. 
                 Click <a href='https://github.com/MadryLab/photoguard'>here</a> for the source code.
             </article>
         ),
@@ -189,13 +247,6 @@ export const pages = [
                 but one area in which they have proven to be particularly useful is code generation. <br/>
                 Check out <a href='https://github.com/AntonOsika/gpt-engineer'>this GitHub repository</a> for 
                 a tool that can generate an entire codebase from one prompt.
-            </article>
-        ),
-        (
-            <article>
-                AI can be used to extract information from documents. This task is called <a href='https://huggingface.co/tasks/document-question-answering'>Document Visual Question Answering</a>, and 
-                corporations are able to use models like <a href='https://medium.com/dair-ai/papers-explained-10-layout-lm-32ec4bad6406'>LayoutLM</a> to automate document processing. <br/>
-                <a href='https://huggingface.co/blog/document-ai'>Document AI</a> - HuggingFace blog post<br/>
             </article>
         )
     ]

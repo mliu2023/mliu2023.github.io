@@ -11,9 +11,12 @@ export const topics = [
         'K-Means Clustering', 
         'Principal Component Analysis (PCA)', 
         'Autoencoders', 
-        'Transfer Learning', 
-        'Reinforcement Learning', 
-        'Multi-task Learning'
+        'Sparse Autoencoders',
+        'Reinforcement Learning',
+        'On-Policy vs. Off-Policy RL',
+        'Q-Learning',
+        'Proximal Policy Optimization (PPO)',
+        'GFlowNets'
     ],
     [
         'Convolutional Neural Networks (CNNs)', 
@@ -21,17 +24,16 @@ export const topics = [
         'Recurrent Neural Networks (RNNs)', 
         'Transformers', 
         'Inductive Bias: CNNs vs Transformers', 
+        'Graph Neural Networks',
+        'Diffusion Models',
         'Generative Adversarial Networks', 
-        'Diffusion Models', 
-        'Graph Neural Networks', 
-        'Statistical AI'],
+        'Transfer Learning',],
     [
         'Tesla Self-Driving Cars', 
-        'AI-Generated Art', 
+        'Image Generation', 
         'Drug Discovery', 
         'Neural Radiance Fields', 
         'Adversarial Attacks', 
-        'Code Generation', 
-        'Document Processing'
+        'Code Generation',
     ]
 ];

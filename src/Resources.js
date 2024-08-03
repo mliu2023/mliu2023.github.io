@@ -30,27 +30,8 @@ function Resources() {
                 <li>
                     <a href='https://learn.deeplearning.ai/'>DeepLearning.ai</a> - a set of non-technical short courses for developing AI tools
                 </li>
-            </ul>
-            <br/>
-                <h2>Specific resources:</h2>
-            <ul>
                 <li>
-                    <a href='https://pytorch-geometric.readthedocs.io/en/latest/'>PyTorch Geometric</a> - library for graph neural networks
-                </li>
-                <li>
-                    <a href='https://deepchem.io/'>DeepChem</a> - Python library for deep learning on molecular datasets
-                </li>
-                <li>
-                    <a href='https://moody-challenge.physionet.org/'>PhysioNet Challenges</a> - data science challenges related to ECGs and other physiological signals
-                </li>
-                <li>
-                    <a href='https://gymnasium.farama.org/'>Gymnasium</a> - Python library for creating reinforcement learning environments
-                </li>
-                <li>
-                    <a href='https://developers.google.com/earth-engine/datasets'>https://developers.google.com/earth-engine/datasets</a> - google earth engine
-                </li>
-                <li>
-                    <a href='https://www.langchain.com/'>LangChain</a> - a framework for developing applications powered by LLMs
+                    <a href='https://mango-ambulance-93a.notion.site/ARENA-Virtual-Resources-7934b3cbcfbf4f249acac8842f887a99'>ARENA</a> - exercises on deep learning, transformers, and reinforcement learning with a focus on AI safety.
                 </li>
             </ul>
             <br/>
