@@ -1,5 +1,4 @@
 import React, { useEffect, useRef } from 'react';
-import About from './About';
 import './Home.css';
 
 function Home() {
@@ -7,13 +6,12 @@ function Home() {
 
   useEffect(() => {
     let text = [
+      'you have leftover GPUs from mining Bitcoin.',
       'algorithms are too hard.',
       'Attention Is All You Need.',
-      'money.',
-      'you have leftover GPUs from mining Bitcoin.',
+      'self-driving cars.',
       'drug discovery.',
-      'LLMs can write my papers.',
-      'hardware is boring.'];
+      'LLMs can write your papers.'];
     let timer = setTimeout(() => typeWriter(text), 1000);
     return () => {
       clearTimeout(timer);

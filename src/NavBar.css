@@ -1,13 +1,7 @@
 /* NavBar */
 nav {
-    margin: 18px;
+    margin: 18px 48px;
     top: 0;
-}
-
-@media (max-width: 750px) {
-    nav ul {
-        flex-direction: column;
-    }
 }
 
 nav ul {
@@ -17,11 +11,13 @@ nav ul {
     background-color: transparent;
 }
 
-nav li {
-    float: left;
+@media (max-width: 750px) {
+    nav ul {
+        flex-direction: column;
+    }
 }
 
-nav ul li .link {
+nav ul .link {
     display: block;
     font-size: 18px;
     text-align: center;
@@ -29,11 +25,11 @@ nav ul li .link {
     text-decoration: none;
 }
 
-nav li .link:hover {
+nav ul .link:hover {
     background-color: rgb(50, 50, 50);
 }
 
-nav li .active {
+nav ul li .active {
     position: relative;
     left: 0;
     bottom: 2px;

@@ -3,10 +3,8 @@
 }
 
 .home .tagline {
-    position: relative;
-    left: 20vw;
-    top: 10vh;
-    padding-bottom: 36px;
+    margin-top: 96px;
+    padding: 36px 96px;
 }
 
 .home .tagline h1 {
@@ -27,7 +25,21 @@
     display: inline-block;
     font-size: 24px;
     padding-left: 4px;
-    padding-right: 2px;
+    padding-right: 4px;
     border-right: 2px solid rgba(220, 220, 220);
     animation: blinkTextCursor 750ms steps(20) infinite normal;
+}
+
+@media (max-width: 750px) {
+    .home .tagline {
+        margin-top: 0;
+        padding: 18px 18px;
+    }
+
+    .home .tagline h1 {
+        font-size: 48px;
+    }
+    .home .tagline h5 {
+        font-size: 18px;
+    }
 }

@@ -1,7 +1,10 @@
-export const unitNames = ['Introduction to Supervised Learning and Neural Networks',
+export const unitNames = 
+[
+    'Introduction to Supervised Learning and Neural Networks',
     'Unsupervised and Other Types of Learning',
     'Deep Learning Architectures',
-    'Applications']
+    'Applications'
+]
 export const overview = [
     (
         <div className="card">

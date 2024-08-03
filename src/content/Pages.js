@@ -112,7 +112,10 @@ export const pages = [
             <article>
                 Watch the following video from 1:09 to 7:40: <a href='https://youtu.be/aw3H-wPuRcw?t=69'>Attention mechanism</a>. <br/>
                 Then, watch the following video: <a href='https://youtu.be/TQQlZhbC5ps?t=164'>Transformers</a>.
-                Pay attention to how the attention mechanism is different in the encoder and the decoder.
+                Pay attention to how the attention mechanism is different in the encoder and the decoder. <br/>
+                Since transformers are so important, <a href='https://jalammar.github.io/illustrated-transformer/'>here</a> is another visual explanation. <br/>
+                <a href='https://transformer-circuits.pub/2021/framework/index.html'>And another one</a> (read the section titled "Transformer Overview"). <br/>
+                I would highly recommend going through this <a href='https://colab.research.google.com/drive/1Zl3zSdli_epSfaoQ_HeBCuE6dkGWTowd#scrollTo=sRrD2AbyMwmP'>notebook</a> and doing the exercises.
             </article>
         ),
         (
@@ -191,12 +194,8 @@ export const pages = [
         (
             <article>
                 AI can be used to extract information from documents. This task is called <a href='https://huggingface.co/tasks/document-question-answering'>Document Visual Question Answering</a>, and 
-                corporations are able to use models like <a href='https://medium.com/dair-ai/papers-explained-10-layout-lm-32ec4bad6406'>LayoutLM</a> to automate document processing.
-                Check out the following links for some Document AI resources: <br/> <br/>
-                <a href='https://github.com/impira/docquery'>Docquery</a> - allows users to ask questions to a single document or directory of files<br/>
-                <a href='https://labelstud.io/guide/get_started#Quick-start'>Label Studio</a> - a data labeling tool<br/>
+                corporations are able to use models like <a href='https://medium.com/dair-ai/papers-explained-10-layout-lm-32ec4bad6406'>LayoutLM</a> to automate document processing. <br/>
                 <a href='https://huggingface.co/blog/document-ai'>Document AI</a> - HuggingFace blog post<br/>
-                <a href='https://www.butlerlabs.ai/blog-posts/tutorial-train-layoutlm-on-a-custom-dataset-with-hugging-face'>Fine-tuning on custom dataset</a> - butlerlabs.ai tutorial
             </article>
         )
     ]

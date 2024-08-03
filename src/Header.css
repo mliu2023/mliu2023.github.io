@@ -1,14 +1,6 @@
 /* Header */
 .header {
-    padding: 18px;
-}
-.header img {
-    display: inline;
-    position: relative;
-    width: 60px;
-    height: 40px;
-    margin-right: 20px;
-    top: 8px;
+    padding: 36px 48px 18px;
 }
 .header h1 {
     display: inline;
@@ -16,5 +8,5 @@
 }
 .header hr {
     position: relative;
-    top: 24px;
+    top: 18px;
 }

@@ -6,9 +6,9 @@ function About() {
   <div className="about">
     <section id="section1" className="card">
       <p>
-          Hi there! I'm Max Liu, a freshman at Brown University.
+          Hi there! I'm Max Liu, a sophomore at Brown University.
           I made this website to help people learn
-          about AI/Deep Learning from a compliation of videos and articles.
+          about deep learning from a compliation of videos and articles.
           Please feel free to email/dm me with any suggestions!
       </p>
     </section>
