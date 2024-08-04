@@ -6,7 +6,7 @@
 .about .card {
     align-items: center;
     width: 40%;
-    margin: 36px 0px;
+    margin: 36px 36px;
 }
 
 #section3 ul{
@@ -14,7 +14,7 @@
     padding-left: 15px;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
     .about .card {
         width: 80%;
     }

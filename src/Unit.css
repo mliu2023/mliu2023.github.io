@@ -39,11 +39,11 @@
 }
 
 .unit .card {
+    margin: 0px 36px;
     width: 50%;
-    margin: auto;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
     .unit .card {
         width: 80%;
     }

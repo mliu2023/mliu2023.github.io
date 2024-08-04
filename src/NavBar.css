@@ -11,7 +11,7 @@ nav ul {
     background-color: transparent;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
     nav ul {
         flex-direction: column;
     }

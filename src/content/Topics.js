@@ -1,9 +1,9 @@
 export const topics = [
     [
         'Types of Variables', 
-        'Converting Categorical Data into Numeric Data', 
+        'Converting Categorical Data to Numeric Data', 
         'Training, Validation, and Testing', 
-        'Underfitting/Overfitting', 
+        'Underfitting and Overfitting', 
         'Machine Learning Methods', 
         'Neural Networks'
     ],
@@ -16,7 +16,7 @@ export const topics = [
         'On-Policy vs. Off-Policy RL',
         'Q-Learning',
         'Proximal Policy Optimization (PPO)',
-        'GFlowNets'
+        'Generative Flow Networks'
     ],
     [
         'Convolutional Neural Networks (CNNs)', 

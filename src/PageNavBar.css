@@ -1,17 +1,15 @@
 .pageNav ul {
+    height: 40px;
+    padding-right: 18px;
+    display: flex;
     list-style-type: none;
     overflow: hidden;
     background-color: transparent;
-}
-
-.pageNav ul {
-    padding-right: 18px;
-    display: flex;
     justify-content: center;
 }
 
 .pageNav button {
-    height: 40px;
+    height: 100%;
     background-color: transparent;
     border: 2px solid rgb(150, 150, 150);
 }
@@ -39,7 +37,7 @@
 
 .title {
     height: 100%;
-    width: 40vw;
+    width: 60vw;
     border-top: 2px solid rgb(150, 150, 150);
     border-bottom: 2px solid rgb(150, 150, 150);
     text-align: center;
@@ -48,4 +46,19 @@
 .title h3 {
     position: relative;
     top: 6px;
+}
+
+@media (max-width: 760px) {
+    .pageNav ul {
+        height: 80px;
+    }
+    .title {
+        line-height: 60px;
+        width: 50vw;
+    }
+    .title h3 {
+        line-height: 1.5;
+        display: inline-block;
+        vertical-align: middle;
+    }
 }

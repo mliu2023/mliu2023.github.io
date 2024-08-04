@@ -7,8 +7,14 @@
 .lesson {
     border: 2px solid rgba(180, 180, 180, 0.25);
     border-radius: 20px;
-    margin: 18px;
+    margin: 36px;
     padding: 36px;
+}
+
+@media (max-width: 760px) {
+    .lesson {
+        margin: 18px;
+    }
 }
 
 h3 {

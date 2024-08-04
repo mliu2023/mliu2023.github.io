@@ -30,7 +30,7 @@
     animation: blinkTextCursor 750ms steps(20) infinite normal;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 760px) {
     .home .tagline {
         margin-top: 0;
         padding: 18px 18px;

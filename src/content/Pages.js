@@ -24,7 +24,8 @@ export const pages = [
         ),
         (
             <article>
-                Watch the following video: <a href='https://www.youtube.com/watch?v=o3DztvnfAJg&ab_channel=NStatum'>Underfitting & Overfitting - Explained</a>.
+                Watch the following video: <a href='https://www.youtube.com/watch?v=o3DztvnfAJg&ab_channel=NStatum'>Underfitting & Overfitting - Explained</a>. <br/>
+                Next, read about the <a href='https://towardsdatascience.com/the-bias-variance-tradeoff-cf18d3ec54f9'>Bias-variance tradeoff</a>.
             </article>
         ),
         (
