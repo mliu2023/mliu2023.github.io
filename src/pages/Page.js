@@ -1,8 +1,8 @@
 import React from 'react';
-import PageNavBar from './PageNavBar';
+import PageNavBar from '../utils/PageNavBar';
 import './Page.css';
-import { topics } from './content/Topics';
-import { pages } from './content/Pages';
+import { topics } from '../content/Topics';
+import { pages } from '../content/Pages';
 
 function Page({ unit, index, title }) {
     let currPage = pages[unit - 1][index - 1];

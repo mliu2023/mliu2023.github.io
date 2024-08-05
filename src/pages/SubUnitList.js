@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import { topics } from './content/Topics';
-import CustomLink from './CustomLink';
+import { topics } from '../content/Topics';
+import CustomLink from '../utils/CustomLink';
 import Unit from './Unit';
 
 export const subUnitList =

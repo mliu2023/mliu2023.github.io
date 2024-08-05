@@ -1,6 +1,6 @@
 import React from 'react';
 import './Unit.css';
-import { unitNames, overview } from './content/UnitOverview'
+import { unitNames, overview } from '../content/UnitOverview'
 
 function Unit({ unit, subUnitList }){
     return (

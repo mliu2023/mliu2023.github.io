@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { topics } from './content/Topics';
+import { topics } from '../content/Topics';
 import Page from './Page';
 
 export const subUnitRoutes =

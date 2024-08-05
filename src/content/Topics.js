@@ -9,7 +9,7 @@ export const topics = [
     ],
     [
         'K-Means Clustering', 
-        'Principal Component Analysis (PCA)', 
+        'Dimensionality Reduction', 
         'Autoencoders', 
         'Sparse Autoencoders',
         'Reinforcement Learning',
@@ -23,6 +23,7 @@ export const topics = [
         'FCNs and R-CNNs', 
         'Recurrent Neural Networks (RNNs)', 
         'Transformers', 
+        'Vision Transformers',
         'Inductive Bias: CNNs vs Transformers', 
         'Graph Neural Networks',
         'Diffusion Models',

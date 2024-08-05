@@ -1,14 +1,13 @@
 .page {
+    padding: 0 18px;
     color: rgb(220, 220, 220);
-    padding-left: 18px;
-    padding-right: 18px;
 }
 
 .lesson {
-    border: 2px solid rgba(180, 180, 180, 0.25);
-    border-radius: 20px;
     margin: 36px;
     padding: 36px;
+    border: 2px solid rgba(180, 180, 180, 0.25);
+    border-radius: 20px;
 }
 
 @media (max-width: 760px) {

@@ -1,6 +1,6 @@
 .pageNav ul {
-    height: 40px;
     padding-right: 18px;
+    height: 40px;
     display: flex;
     list-style-type: none;
     overflow: hidden;

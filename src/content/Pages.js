@@ -49,15 +49,28 @@ export const pages = [
     [
         (
             <article>
-                Watch the following video: <a href='https://www.youtube.com/watch?v=R2e3Ls9H_fc&ab_channel=TheDataPost'>K-means visualized</a>. <br/>
+                K-Means is an algorithm to partition a set of points into k different clusters, where k is a hyperparameter that is chosen beforehand.
+                In a labeled classification dataset, clustering is already done for us. For example, the ImageNet1K dataset can be partitioned into 1000 clusters, each cluster representing one of the 1000 possible classifications. <br/>
+
+                Video explaining K-Means: <a href='https://www.youtube.com/watch?v=R2e3Ls9H_fc&ab_channel=TheDataPost'>K-means visualized</a>. <br/>
                 <a href='https://www.naftaliharris.com/blog/visualizing-k-means-clustering/'>Here</a> is the demo used in the video.
+
+                <div class="gistContainer">
+                    <ReactEmbedGist className="gist" wrapperClass="gistWrapper" titleClass="gistTitle" gist="mliu2023/8d3c173525d1e710e5a68bc21cfff6c5" />
+                </div>
             </article>
 
         ),
         (
 
             <article>
-                Watch the following video: <a href='https://www.youtube.com/watch?v=FD4DeN81ODY&ab_channel=VisuallyExplained'>Principal Component Analysis (PCA)</a>. <br/>
+                Principal Component Analysis (PCA) is a linear dimensionality reduction technique. Given a set of points, it computes the eigenvalues and eigenvectors. 
+                The largest eigenvalues correspond to the most important eigenvectors, and those are used as a basis to project the data onto. <br/>
+                <a href='https://www.youtube.com/watch?v=FD4DeN81ODY&ab_channel=VisuallyExplained'>Visual explanation of PCA</a> <br/> <br/>
+
+                t-SNE is a nonlinear dimensionality reduction technique, which allows it to separate points that cannot be separated by a hyperplane. 
+                <a href='https://towardsdatascience.com/t-sne-clearly-explained-d84c537f53a'></a> <br/>
+                <a href='https://distill.pub/2016/misread-tsne/'>Visualzation</a>
             </article>
 
         ),
@@ -85,7 +98,9 @@ export const pages = [
                 activations (in addition to the L2 reconstruction loss), which encourages the activations in the feature space to be sparse. In an ideal world, each input would correspond to only a few activations in
                 the feature space, which are likely to be more human-interpretable. <br/> <br/>
                 <a href='https://transformer-circuits.pub/2023/monosemantic-features/index.html'>Anthropic's research on a one-layer transformer (October 2023)</a> <br/>
-                <a href='https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html'>Anthropic's research on Claude 3 Sonnet (May 2024)</a>
+                <a href='https://transformer-circuits.pub/2024/scaling-monosemanticity/index.html'>Anthropic's research on Claude 3 Sonnet (May 2024)</a> <br/> <br/>
+
+                This <a href='https://www.lesswrong.com/posts/bCtbuWraqYTDtuARg/towards-multimodal-interpretability-learning-sparse-2#comments'>LessWrong post</a> finds some interpretable features in vision transformers.
             </article>
         ),
         (
@@ -151,17 +166,27 @@ export const pages = [
     [
         (
             <article>
-                Watch the following Stanford lectures: <a href='https://www.youtube.com/watch?v=bNb2fEVKeEo&t=3646s&ab_channel=StanfordUniversitySchoolofEngineering'>Lecture 5 | Convolutional Neural Networks</a>, <a href='https://www.youtube.com/watch?v=DAOcjicFr1Y&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=9&ab_channel=StanfordUniversitySchoolofEngineering'>Lecture 9 | CNN Architectures</a>.
+                Convolutional neural networks are used to extract features from visual data. 
+                Whereas traditional computer vision methods rely on hand-crafted features, 
+                CNNs outperform traditional methods because they can learn more complex features,
+                whereas previous methods rely on hand-crafted features. <br/>
+
+                The following Stanford lectures are helpful: <a href='https://www.youtube.com/watch?v=bNb2fEVKeEo&t=3646s&ab_channel=StanfordUniversitySchoolofEngineering'>Lecture 5 | Convolutional Neural Networks</a>, <a href='https://www.youtube.com/watch?v=DAOcjicFr1Y&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=9&ab_channel=StanfordUniversitySchoolofEngineering'>Lecture 9 | CNN Architectures</a>.
             </article>
         ),
         (
             <article>
+                Fully convolutional networks only have convolutional layers, which means that they input images and output images.
+                They are useful for tasks such as <a href='https://www.mathworks.com/solutions/image-video-processing/semantic-segmentation.html#:~:text=Semantic%20segmentation%20is%20a%20deep,pixels%20that%20form%20distinct%20categories.'>semantic segmentation</a>, 
+                where the output image is a segmented version of the original image. <br/>
+
                 Watch the following Stanford lecture: <a href='https://www.youtube.com/watch?v=nDPWywWRIRo&list=RDCMUCdKG2JnvPu6mY1NDXYFfN0g&index=6&ab_channel=StanfordUniversitySchoolofEngineering'>Lecture 11 | Detection and Segmentation</a>. <br/>
                 Then, watch the following video from 6:24 to 12:26: <a href='https://youtu.be/sFztPP9qPRc?t=384'>U-Nets Explained</a>.
             </article>
         ),
         (
             <article>
+                Recurrent neural networks are used to process sequential data such as text, audio, and physiological signals. <br/>
                 Watch the following videos: <a href='https://www.youtube.com/watch?v=LHXXI4-IEns&ab_channel=TheA.I.Hacker-MichaelPhi'>RNNs</a>, <a href='https://www.youtube.com/watch?v=8HyCNIVRbSU&ab_channel=TheA.I.Hacker-MichaelPhi'>LSTM and GRU</a>.
                 How are LSTMs and GRUs an improvement over standard RNNs?
             </article>
@@ -178,8 +203,14 @@ export const pages = [
         ),
         (
             <article>
+                Vision transformers (ViTs) apply transformers to visual tasks such as image classification or object detection.
+                Read the original paper here: <a href='https://arxiv.org/pdf/2010.11929'>An Image is Worth 16x16 Words</a>
+            </article>
+        ),
+        (
+            <article>
                 Read the following article: <a href='https://ai.facebook.com/blog/computer-vision-combining-transformers-and-convolutional-neural-networks/'>CNNs vs Transformers</a>.
-                Focus on understanding when inductive bias can be beneficial and when it can be detrimental.
+                Focus on understanding when inductive bias can be beneficial and when it can be detrimental. What are the advantages and disadvantages of CNNs vs. ViTs for visual tasks?
             </article>
         ),
         (

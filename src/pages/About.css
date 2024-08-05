@@ -9,11 +9,6 @@
     margin: 36px 36px;
 }
 
-#section3 ul{
-    list-style-type: "- ";
-    padding-left: 15px;
-}
-
 @media (max-width: 760px) {
     .about .card {
         width: 80%;

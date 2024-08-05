@@ -1,13 +1,13 @@
 import React from 'react';
 import { HashRouter, Route, Routes, Navigate } from 'react-router-dom';
-import Header from './Header';
-import NavBar from './NavBar';
-import Home from './Home';
-import About from './About';
-import Resources from './Resources';
+import Header from './utils/Header';
+import NavBar from './utils/NavBar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Resources from './pages/Resources';
 import './App.css';
-import { subUnitList } from './SubUnitList';
-import { subUnitRoutes } from './SubUnitRoutes';
+import { subUnitList } from './pages/SubUnitList';
+import { subUnitRoutes } from './pages/SubUnitRoutes';
 
 function App() {
   return (
