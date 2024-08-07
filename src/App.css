@@ -3,3 +3,13 @@ body {
     overflow-y: scroll;
     padding-bottom: 48px;
 }
+
+.katex {
+    font-family: 'Times New Roman', Times, serif;
+    /* Apply Times New Roman font */
+}
+
+.katex .mord {
+    font-family: 'Times New Roman', Times, serif;
+    /* Ensure all elements inherit the font */
+}

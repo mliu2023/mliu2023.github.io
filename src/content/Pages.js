@@ -1,10 +1,16 @@
 import ReactEmbedGist from 'react-embed-gist';
 
+var Latex = require('react-latex');
+
 export const pages = [
     [
         (
             <article>
-                Read the following blog post: <a href='https://vitalflux.com/data-variables-types-uses-in-data-science/'>Types of variables</a>.
+                When training an ML model, it is important to know the types of input and output variables to properly encode them into numbers.
+                In the following blog post, you can read about different kinds of quantitative and qualitative variables: <a href='https://vitalflux.com/data-variables-types-uses-in-data-science/'>Types of variables</a>. <br/> <br/>
+
+                The next page will cover how to convert categorical (qualitative) variables into numbers that can be read by a machine.
+
                 <div class="gistContainer">
                     <ReactEmbedGist className="gist" wrapperClass="gistWrapper" titleClass="gistTitle" gist="mliu2023/3bebbdb262f9d04af6a8a36efad3414f"/>
                 </div>
@@ -18,6 +24,8 @@ export const pages = [
         ),
         (
             <article>
+                An ML model is not trained and tested on the same data; this would be equivalent to encountering the exact homework questions on an exam.
+                Instead, a portion of the dataset is reserved for testing the model after training. This ensures that the model is not simply memorizing the training data. <br/>
                 Watch the following video: <a href='https://www.youtube.com/watch?v=swCf51Z8QDo&ab_channel=IntuitiveML'>Intuition: Training Set vs. Test Set vs. Validation Set</a>.
                 Pay attention to why the validation set exists.
             </article>
@@ -254,23 +262,35 @@ export const pages = [
         ),
         (
             <article>
-                MIT researchers discover <a href='https://news.mit.edu/2020/artificial-intelligence-identifies-new-antibiotic-0220'>a new antibiotic compound</a>. <br/>
-                <a href='https://www.nature.com/articles/s41467-022-29939-5'>Equivariant graph neural networks</a> are used to learn the structure of molecules.
+                AI is used to solve problems in biochemistry involving molecules and proteins. A key deep learning architecture for drug discovery is the equivariant neural network. 
+                This architecture allows the model to understand geometric relationships between different parts of the input. 
+                For example, rotating a molecule does not change its properties (but reflecting it does), so we would like the model to produce consistent outputs. 
+                There are two symmetry-respecting properties that a function can have: <br/> <br/>
+                Let <Latex>$f$</Latex> be a function, <Latex>$x \in X$</Latex> be a molecule, and <Latex>$v \in V$</Latex> be a rotation. <b>Invariance</b> means that <Latex>$f(vx) = f(x)$</Latex> for any rotation <Latex>$v$</Latex>. <b>Equivariance</b> means that <Latex>$f(vx) = v \cdot f(x)$</Latex> for any rotation <Latex>$v$</Latex>. 
+                In general, <Latex>$V$</Latex> is a group that acts on <Latex>$X$</Latex> and <Latex>$f(X)$</Latex>. <br/> <br/>
+
+                <a href='https://www.nature.com/articles/s41467-022-29939-5'>Equivariant graph neural networks</a> are used to learn potential energies of molecules. <br/>
+                This lecture covers geometric deep learning with an emphasis on biochemical applications: <a href='https://www.youtube.com/watch?v=MeJgxYfiaz8&t=3023s&ab_channel=SymposiaatCSAIL'>MIT guest lecture</a>
             </article>
         ),
         (
             <article>
                 Neural Radiance Fields (NeRFs) are a type of neural network that can synthesize 
-                views of complex 3D scenes. <a href='https://www.youtube.com/watch?v=CRlN-cYFxTk&ab_channel=YannicKilcher'>NeRFs Explained</a>.
+                views of complex 3D scenes. <br/>
+                <a href='https://www.youtube.com/watch?v=CRlN-cYFxTk&ab_channel=YannicKilcher'>NeRFs Explained</a> <br/>
+                <a href='https://www.matthewtancik.com/nerf'>Original paper</a>
             </article>
         ),
         (
             <article>
-                Adversarial attacks are used to trick a model into producing an 
-                incorrect/nonsensical output. <a href='https://www.tensorflow.org/tutorials/generative/adversarial_fgsm'>Tensorflow example</a>. <br/>
-                This is particularly useful when we want to prevent large AI models from manipulating our images to create deepfakes. <br/>
+                Adversarial attacks trick a model into producing an 
+                incorrect/nonsensical output. <a href='https://www.tensorflow.org/tutorials/generative/adversarial_fgsm'>Tensorflow example</a>. <br/> <br/>
+                
+                This is particularly useful in preventing models from manipulating our images to create deepfakes. <br/>
                 A tool called <a href='https://www.technologyreview.com/2023/07/26/1076764/this-new-tool-could-protect-your-pictures-from-ai-manipulation/'>PhotoGuard</a> was developed to protect your images. 
-                Click <a href='https://github.com/MadryLab/photoguard'>here</a> for the source code.
+                Click <a href='https://github.com/MadryLab/photoguard'>here</a> for the source code. <br/> <br/>
+
+                However, adversarial attacks also pose many problems to future AI systems, and they are an active area of research in AI safety.
             </article>
         ),
         (
