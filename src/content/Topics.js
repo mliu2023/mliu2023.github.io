@@ -32,9 +32,11 @@ export const topics = [
     [
         'Tesla Self-Driving Cars', 
         'Image Generation', 
+        'Neural Style Transfer',
         'Drug Discovery', 
         'Neural Radiance Fields', 
         'Adversarial Attacks', 
         'Code Generation',
+        'AlphaGo'
     ]
 ];

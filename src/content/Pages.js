@@ -177,9 +177,12 @@ export const pages = [
                 Convolutional neural networks are used to extract features from visual data. 
                 Whereas traditional computer vision methods rely on hand-crafted features, 
                 CNNs outperform traditional methods because they can learn more complex features,
-                whereas previous methods rely on hand-crafted features. <br/>
+                whereas previous methods rely on hand-crafted features. <br/> <br/>
 
-                The following Stanford lectures are helpful: <a href='https://www.youtube.com/watch?v=bNb2fEVKeEo&t=3646s&ab_channel=StanfordUniversitySchoolofEngineering'>Lecture 5 | Convolutional Neural Networks</a>, <a href='https://www.youtube.com/watch?v=DAOcjicFr1Y&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=9&ab_channel=StanfordUniversitySchoolofEngineering'>Lecture 9 | CNN Architectures</a>.
+                The following Stanford lectures are helpful: <br/>
+                <a href='https://www.youtube.com/watch?v=bNb2fEVKeEo&t=3646s&ab_channel=StanfordUniversitySchoolofEngineering'>Lecture 5 | Convolutional Neural Networks</a>, <a href='https://www.youtube.com/watch?v=DAOcjicFr1Y&list=PL3FW7Lu3i5JvHM8ljYj-zLfQRF3EO8sYv&index=9&ab_channel=StanfordUniversitySchoolofEngineering'>Lecture 9 | CNN Architectures</a>. <br/> <br/>
+
+                Practice implementing CNNs in Kaggle's <a href='https://www.kaggle.com/competitions/digit-recognizer/overview'>MNIST digit recognition contest</a>.
             </article>
         ),
         (
@@ -262,6 +265,15 @@ export const pages = [
         ),
         (
             <article>
+                The goal of neural style transfer is to take an image and reproduce it in the artistic style of another image.
+                This Stanford lecture explains how to visualize and understand CNN features, 
+                building up to style transfer: <a href='https://www.youtube.com/watch?v=6wcs6szJWMY'>Lecture 12 | Visualizing and Understanding</a> <br/> <br/>
+
+                <a href='https://pytorch.org/tutorials/advanced/neural_style_tutorial.html'>PyTorch tutorial for neural style transfer</a>
+            </article>
+        ),
+        (
+            <article>
                 AI is used to solve problems in biochemistry involving molecules and proteins. A key deep learning architecture for drug discovery is the equivariant neural network. 
                 This architecture allows the model to understand geometric relationships between different parts of the input. 
                 For example, rotating a molecule does not change its properties (but reflecting it does), so we would like the model to produce consistent outputs. 
@@ -284,13 +296,15 @@ export const pages = [
         (
             <article>
                 Adversarial attacks trick a model into producing an 
-                incorrect/nonsensical output. <a href='https://www.tensorflow.org/tutorials/generative/adversarial_fgsm'>Tensorflow example</a>. <br/> <br/>
+                incorrect/nonsensical output. <a href='https://www.tensorflow.org/tutorials/generative/adversarial_fgsm'>Tensorflow example</a>. 
+                They work by perturbing the input in a way that tricks a model into producing undesirable behavior (e.g., incorrect predictions, deceptive actions, and security leaks). <br/> <br/>
                 
                 This is particularly useful in preventing models from manipulating our images to create deepfakes. <br/>
                 A tool called <a href='https://www.technologyreview.com/2023/07/26/1076764/this-new-tool-could-protect-your-pictures-from-ai-manipulation/'>PhotoGuard</a> was developed to protect your images. 
                 Click <a href='https://github.com/MadryLab/photoguard'>here</a> for the source code. <br/> <br/>
 
-                However, adversarial attacks also pose many problems to future AI systems, and they are an active area of research in AI safety.
+                However, adversarial attacks also pose many problems to future AI systems, 
+                and they are an active area of research in AI safety. <a href='https://arxiv.org/abs/2403.05030'>Latent Adversarial Training</a> was developed to improve robustness against unforeseen attacks.
             </article>
         ),
         (
@@ -299,6 +313,30 @@ export const pages = [
                 but one area in which they have proven to be particularly useful is code generation. <br/>
                 Check out <a href='https://github.com/AntonOsika/gpt-engineer'>this GitHub repository</a> for 
                 a tool that can generate an entire codebase from one prompt.
+            </article>
+        ),
+        (
+            <article>
+                AlphaGo is a computer program that was trained to play the game of Go. 
+                It is comprised of three parts: a policy network, a value network, and Monte Carlo Tree Search (MCTS). <br/> <br/>
+
+                MCTS is used to search for good moves. 
+                In an ideal world, an algorithm could start from any given position and perform breadth-first search or depth-first search, trying all possible moves until one side wins.
+                However, this would require an impossibly large amount of computing power. 
+                Instead, the policy network is used to generate possible (good) moves, and the depth of the tree is restricted (to roughly 50).
+                Then, each of the leaves is evaluated with the value network, and the leaf that gives the player the highest chance of winning is chosen.
+                The program then chooses the move that corresponds to this leaf. The search is optimized to not further explore
+                unpromising positions using alpha-beta pruning. <br/> <br/>
+
+                The policy network was first trained to play moves like professional players.
+                This is just a supervised learning task: given a position, predict what move a pro would make.
+                Then, it was trained using reinforcement learning by playing against itself. <br/> <br/>
+
+                The value network is trained using the self-play games. 
+                For each game that was played, a random position is chosen, and the network is trained to predict the probability of each side winning. <br/> <br/>
+
+                <a href='https://www.youtube.com/watch?v=Z1BELqFQZVM'>AlphaGo paper explained</a> <br/>
+                <a href='https://www.youtube.com/watch?v=WXuK6gekU1Y&t=89s'>AlphaGo documentary</a>
             </article>
         )
     ]
