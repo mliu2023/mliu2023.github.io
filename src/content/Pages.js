@@ -113,6 +113,22 @@ export const pages = [
         ),
         (
             <article>
+                Learning representations using masks has been a successful method in natural language processing and computer vision, although it has fallen out of favor in recent years. <br/> <br/>
+
+                Masked language datasets randomly replace some of the tokens with a mask token, 
+                and masked language models are then trained to predict the missing tokens.
+                Masked vision datasets randomly mask patches of images (e.g. by making them black),
+                and masked vision models are then trained to predict the missing pixels. <br/> <br/>
+
+                This task does not require labeled data, as the model is trained to learn features of the inputs it is given, similar to an autoencoder. 
+                In theory, training models on this task would force them to learn a representation of language or vision in its parameters. <br/> <br/>
+
+                Masks were used in <a href='https://arxiv.org/abs/1703.06870'>Mask R-CNN</a>, a vision model for object-instance segmentation. <br/>
+                Masks were also used to pre-train <a href='https://arxiv.org/pdf/1810.04805'>BERT</a>, a language model which also achieved state-of-the-art results.
+            </article>
+        ),
+        (
+            <article>
                 Read the following article: <a href='https://towardsdatascience.com/reinforcement-learning-101-e24b50e1d292'>Reinforcement Learning 101</a>. <br/>
                 If you would like a more hands-on learning experience, check out this <a href='https://huggingface.co/learn/deep-rl-course/unit0/introduction'>RL course from HuggingFace</a>. <br/>
                 <a href='https://www.youtube.com/@b2stud'>b2studios</a> and <a href='https://www.youtube.com/@CodeBullet'>Code Bullet</a> make some entertaining RL simulations.
@@ -337,6 +353,13 @@ export const pages = [
 
                 <a href='https://www.youtube.com/watch?v=Z1BELqFQZVM'>AlphaGo paper explained</a> <br/>
                 <a href='https://www.youtube.com/watch?v=WXuK6gekU1Y&t=89s'>AlphaGo documentary</a>
+            </article>
+        )
+    ],
+    [
+        (
+            <article>
+                Still reading!
             </article>
         )
     ]

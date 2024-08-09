@@ -12,5 +12,6 @@
 @media (max-width: 760px) {
     .about .card {
         width: 80%;
+        word-break: break-word;
     }
 }

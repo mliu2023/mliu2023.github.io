@@ -11,12 +11,6 @@ nav ul {
     background-color: transparent;
 }
 
-@media (max-width: 760px) {
-    nav ul {
-        flex-direction: column;
-    }
-}
-
 nav ul .link {
     padding: 14px 18px;
     font-size: 18px;
@@ -50,5 +44,17 @@ nav ul li .active {
     to {
         width: 100%;
         left: 0%;
+    }
+}
+
+@media (max-width: 860px) {
+    nav ul .link {
+        padding: 14px 11px;
+    }
+}
+
+@media (max-width: 760px) {
+    nav ul {
+        flex-direction: column;
     }
 }

@@ -3,7 +3,8 @@ export const unitNames =
     'Introduction to Supervised Learning and Neural Networks',
     'Unsupervised Learning and Reinforcement Learning',
     'Deep Learning Architectures and Methods',
-    'Applications'
+    'Applications',
+    'Paper Reading Blog'
 ]
 export const overview = [
     (
@@ -36,4 +37,10 @@ export const overview = [
             AI has tons of applications. This is not a comprehensive list, and more
             applications will be added in the future.
         </div>
-    )]
+    ),
+    (
+        <div className="card">
+            In this section I'll share some papers I've found interesting. If you catch any mistakes, please email me!
+        </div>
+    )
+]

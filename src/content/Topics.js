@@ -12,6 +12,7 @@ export const topics = [
         'Dimensionality Reduction', 
         'Autoencoders', 
         'Sparse Autoencoders',
+        'Masked Representation Learning',
         'Reinforcement Learning',
         'On-Policy vs. Off-Policy RL',
         'Q-Learning',
@@ -28,7 +29,8 @@ export const topics = [
         'Graph Neural Networks',
         'Diffusion Models',
         'Generative Adversarial Networks', 
-        'Transfer Learning',],
+        'Transfer Learning'
+    ],
     [
         'Tesla Self-Driving Cars', 
         'Image Generation', 
@@ -38,5 +40,8 @@ export const topics = [
         'Adversarial Attacks', 
         'Code Generation',
         'AlphaGo'
+    ],
+    [
+        'Rectified Flow Transformers'
     ]
 ];

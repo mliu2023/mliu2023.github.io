@@ -9,7 +9,7 @@ function About() {
           Hi there! I'm Max Liu, a sophomore at Brown University.
           I made this website to help people learn
           about deep learning from a compliation of videos and articles.
-          Please feel free to email/dm me with any suggestions!
+          Please feel free to email me at maximusliu2004@gmail.com with any suggestions!
       </p>
     </section>
   </div>);

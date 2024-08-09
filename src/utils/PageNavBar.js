@@ -25,20 +25,16 @@ function PageNavBar({ unit, title, currIndex, pageList }) {
     let backButton = (
         <Link style={{ pointerEvents: onFirstPage ? 'none' : '' }} to={`/unit${unit}/${pageIndex-1}`} className="leftLink">
             <button onClick={goBack} className="leftButton">
-                {<>
-                    {leftArrow}
-                    <div className="buttonText">Prev</div>
-                </>}
+                {leftArrow}
+                <div className="buttonText">Prev</div>
             </button>
         </Link>
     )
     let nextButton = (
         <Link style={{ pointerEvents: onLastPage ? 'none' : '' }} to={`/unit${unit}/${pageIndex+1}`} className="rightLink">
             <button onClick={goNext} className="rightButton">
-                {<>
-                    <div className="buttonText">Next</div>
-                    {rightArrow}
-                </>}
+                <div className="buttonText">Next</div>
+                {rightArrow}
             </button>
         </Link>
     )

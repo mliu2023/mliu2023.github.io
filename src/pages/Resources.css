@@ -7,6 +7,10 @@
     list-style-type: none;
 }
 
+.resources ul li {
+    word-wrap: break-word;
+}
+
 .resources ul li a {
     text-decoration: none;
 }

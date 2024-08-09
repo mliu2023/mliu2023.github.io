@@ -12,6 +12,7 @@ function NavBar() {
         <CustomLink to="/unit2" className="link">Unit 2</CustomLink>
         <CustomLink to="/unit3" className="link">Unit 3</CustomLink>
         <CustomLink to="/unit4" className="link">Unit 4</CustomLink>
+        <CustomLink to="/unit5" className="link">Papers</CustomLink>
         <CustomLink to="/resources" className="link">Resources</CustomLink>
       </ul>
     </nav>
