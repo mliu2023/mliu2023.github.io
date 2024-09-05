@@ -45,6 +45,16 @@ function Resources() {
                 <li><a href='https://www.youtube.com/@outlier4052'>Outlier</a></li>
                 <li><a href='https://www.youtube.com/@bycloudAI'>Bycloud</a></li>
             </ul>
+            <ul>
+                <h2>Helpful blogs:</h2>
+                <li>
+                    <a href='https://lilianweng.github.io/'>Lilian Weng's blog</a>
+                    <a href='https://dilithjay.com/'>Dilith Jayakody's blog</a>
+                    <a href='https://transformer-circuits.pub/'>Anthropic Transformer Circuits</a>
+                    <a href='https://www.alignmentforum.org/'>AI Alignment Forum</a>
+                    <a href='https://www.lesswrong.com/tags/all#ARTIFICIAL_INTELLIGENCE'>LessWrong AI blog</a>
+                </li>
+            </ul>
         </div>
     );
 }
